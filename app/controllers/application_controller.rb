@@ -17,5 +17,26 @@ class ApplicationController < Sinatra::Base
   get '/' do
     "Hello World"
   end
-  
+
+  get "/info" do
+    title= Movie.pluck(:title)
+    release_date= Movie.pluck(:release_date)
+    description= Movie.pluck(:description)
+    count=Movie.count
+    {title:title, release_date:release_date, description:description, total_count:count}.to_json
+  end
+
+
+  get "/movies" do
+    Movie.all.to_json
+  end
+
+  get "/users" do
+    User.all.to_json
+  end
+
+  get"/bookings" do
+    Booking.all.to_json
+  end
+
 end

@@ -57,7 +57,8 @@ puts "Assembling booking table..."
 Booking.create(
     user_id:User.ids.sample,
     movie_id:Movie.ids.sample,
-    showtime: Faker::Time.forward(days: 5,  period: :evening, format: :long),
+    showtime: Faker::Time.forward(days: 5,  period: :evening, format: :long
+    ),
     seats_available:rand(1..60)
 )
 end
