@@ -13,14 +13,16 @@
 ActiveRecord::Schema.define(version: 2021_07_14_184518) do
 
   create_table "bookings", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "movie_id"
     t.datetime "showtime"
     t.integer "seats_available"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
+    t.string "release_date"
     t.text "description"
-    t.date "release_date"
   end
 
   create_table "users", force: :cascade do |t|
