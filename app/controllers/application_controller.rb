@@ -14,8 +14,8 @@ class ApplicationController < Sinatra::Base
     200
   end
 
-  # method "URL" do
-    
-  # end
-
+  get '/' do
+    "Hello World"
+  end
+  
 end
