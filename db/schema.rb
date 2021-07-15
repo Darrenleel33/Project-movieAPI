@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_07_14_184518) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "release_date"
+    t.string "img_Url"
     t.text "description"
   end
 

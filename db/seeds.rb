@@ -11,31 +11,37 @@ puts "Repopulating Movies..."
 Movie.create( 
   title: "Black Widow",
   release_date: "07/09/2021",
+  img_Url: "https://images-na.ssl-images-amazon.com/images/I/914MHuDfMSL.jpg",
   description: "Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy, and the broken relationships left in her wake long before she became an Avenger."
 )
 Movie.create( 
   title: "Space Jam: A New Legacy",
   release_date: "07/21/2021",
+  img_Url: "https://static.wikia.nocookie.net/looneytunes/images/3/3e/Space_Jam_A_New_Legacy_official_poster.jpg/revision/latest?cb=20210402161139",
   description: "Superstar LeBron James and his young son, Dom, get trapped in digital space by a rogue AI. To get home safely, LeBron teams up with Bugs Bunny, Daffy Duck and the rest of the Looney Tunes gang for a high-stakes basketball game against the AI's digitized champions of the court -- a powered-up roster called the Goon Squad."
 )
 Movie.create( 
   title: "The Boss Baby: Family Business",
   release_date: "07/02/2021",
+  img_Url: "https://m.media-amazon.com/images/M/MV5BYWY1N2I5MGUtZTBmNS00MWZmLWEyNzAtZjliNzk0ZDVkYzI1XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
   description: "Now adults, Tim Templeton is a stay-at-home dad for two adorable daughters, while his estranged brother, Ted, is a big-shot CEO. They come together in an unexpected way when they take a magical formula that transforms them into babies for 48 hours."
-)
+  )
 Movie.create( 
-  title: "Escape Room: Tournament of Champions",
-  release_date: "07/16/2021",
-  description: "Survivors of previous escape rooms find themselves in a new and increasingly elaborate game filled with deadly traps."
-)
+    title: "Escape Room: Tournament of Champions",
+    release_date: "07/16/2021",
+    img_Url: "https://lh3.googleusercontent.com/proxy/jf4edhceEuq0ePELNECNSM4VXWTKtwmy39kx8Ds6OPEuMD_ZktqC05uF1bTwfRTg0Yoor2bVBLbDvr_f3YjCLC3OiyntPhrYist1QdcylfR43Ysmf_oLMxUr-U-YGdL0UBI8taMWYsIzEw",
+    description: "Survivors of previous escape rooms find themselves in a new and increasingly elaborate game filled with deadly traps."
+    )
 Movie.create( 
-  title: "F9",
-  release_date: "06/25/2021",
-  description: "Dom Toretto is living the quiet life off the grid with Letty and his son, but they know that danger always lurks just over the peaceful horizon. This time, that threat forces Dom to confront the sins of his past to save those he loves most."
-)
-Movie.create( 
-  title: "The Forever Purge",
-  release_date: "07/02/2021",
+      title: "F9",
+      release_date: "06/25/2021",
+      img_Url: "https://m.media-amazon.com/images/M/MV5BMjI0NmFkYzEtNzU2YS00NTg5LWIwYmMtNmQ1MTU0OGJjOTMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_FMjpg_UX1000_.jpg",
+      description: "Dom Toretto is living the quiet life off the grid with Letty and his son, but they know that danger always lurks just over the peaceful horizon. This time, that threat forces Dom to confront the sins of his past to save those he loves most."
+      )
+ Movie.create( 
+        title: "The Forever Purge",
+        release_date: "07/02/2021",
+        img_Url: "https://m.media-amazon.com/images/M/MV5BMGE5NjJjNGMtZDkwMy00MGFlLWFkYTktYWFkNTY1NjcwOTY2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
   description: "Adela and her husband, Juan, live in Texas, where he works as a ranch hand for the wealthy Tucker family. Juan impresses the Tucker patriarch, Caleb, but that fuels the jealous anger of his son, Dylan. "
 )
 
