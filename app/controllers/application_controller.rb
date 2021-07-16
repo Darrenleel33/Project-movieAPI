@@ -1,3 +1,5 @@
+require "pry"
+
 class ApplicationController < Sinatra::Base
   register Sinatra::CrossOrigin
 
@@ -26,18 +28,31 @@ class ApplicationController < Sinatra::Base
     Movie.all.to_json
   end
 
-  get "/users" do
-    User.all.to_json
-  end
-
+  
   get "/bookings" do
     Booking.all.to_json
   end
-
-  get "/user/11/bookings" do
+  
+  get "/user/:id" do
     user=User.find(params[:id])
     bookings=user.booking_and_movie
     bookings.to_json
-    end
+  end
+  
+  delete "/bookings/:id" do
+    userBooking=Booking.find(params[:id])
+    userBooking.destroy
+    userBooking.to_json
+  end
+  
+  post "/user" do
+    newUser=User.create(params)
+    newUser.all.to_json
+  end
+  
+  post "/bookings" do
+    booking= Booking.create(params.slice(:user_id, :movie_id, :showtime, :seats_available))
+    booking.to_json
+  end
 
 end

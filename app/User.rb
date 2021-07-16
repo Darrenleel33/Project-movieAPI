@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     def booking_and_movie
         {
             movie_bookings: self.bookings.map do |booking| 
-                {booking_time: booking.showtime.asctime, movie: booking.movie}
+                {booking_id:booking.id,booking_time: booking.showtime.asctime, movie: booking.movie}
             end 
         }
     end 
