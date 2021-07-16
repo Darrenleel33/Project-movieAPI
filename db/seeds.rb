@@ -17,7 +17,7 @@ Movie.create(
 Movie.create( 
   title: "Space Jam: A New Legacy",
   release_date: "07/21/2021",
-  img_Url: "https://static.wikia.nocookie.net/looneytunes/images/3/3e/Space_Jam_A_New_Legacy_official_poster.jpg/revision/latest?cb=20210402161139",
+  img_Url: "https://resizing.flixster.com/uAs6pQt1Hp0EhV9cTnNX12tzpgE=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2Q3MGJhNDU2LTkxYjEtNGE3Ny1iOTIxLTM1M2UxYTdjMzNkMi5qcGc=",
   description: "Superstar LeBron James and his young son, Dom, get trapped in digital space by a rogue AI. To get home safely, LeBron teams up with Bugs Bunny, Daffy Duck and the rest of the Looney Tunes gang for a high-stakes basketball game against the AI's digitized champions of the court -- a powered-up roster called the Goon Squad."
 )
 Movie.create( 
@@ -29,7 +29,7 @@ Movie.create(
 Movie.create( 
     title: "Escape Room: Tournament of Champions",
     release_date: "07/16/2021",
-    img_Url: "https://lh3.googleusercontent.com/proxy/jf4edhceEuq0ePELNECNSM4VXWTKtwmy39kx8Ds6OPEuMD_ZktqC05uF1bTwfRTg0Yoor2bVBLbDvr_f3YjCLC3OiyntPhrYist1QdcylfR43Ysmf_oLMxUr-U-YGdL0UBI8taMWYsIzEw",
+    img_Url: "https://res.cloudinary.com/westfielddg/image/upload/djwnnr7m9eak3osubohv",
     description: "Survivors of previous escape rooms find themselves in a new and increasingly elaborate game filled with deadly traps."
     )
 Movie.create( 
