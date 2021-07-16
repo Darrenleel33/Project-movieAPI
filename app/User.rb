@@ -11,5 +11,5 @@ class User < ActiveRecord::Base
         }
     end 
 
-    def 
+    
 end

@@ -30,8 +30,14 @@ class ApplicationController < Sinatra::Base
     User.all.to_json
   end
 
-  get"/bookings" do
+  get "/bookings" do
     Booking.all.to_json
   end
+
+  get "/user/11/bookings" do
+    user=User.find(params[:id])
+    bookings=user.booking_and_movie
+    bookings.to_json
+    end
 
 end
